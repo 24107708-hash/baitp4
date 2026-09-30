@@ -1,0 +1,71 @@
+/* MÃ KHỞI ĐỘNG (Giữ nguyên các thuộc tính cơ bản của bài tập) */
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+p {
+   font-size: 25px;
+   font-family: Arial, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  text-align: center;
+}
+
+div img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* =========================================================
+   THAY ĐỔI 1: BỐ CỤC ĐIỆN THOẠI (1 cột ngang) 
+   ========================================================= */
+div {
+  display: block;
+  width: 90vw;
+  margin: 10px auto;
+  padding: 2px;
+}
+
+/* =========================================================
+   THAY ĐỔI 2: TRUY VẤN MÁY TÍNH BẢNG (Kích hoạt ở 772px) 
+   Yêu cầu: 2 div ngang (45vw), ảnh cao tối đa 30vh
+   ========================================================= */
+@media (min-width: 772px) {
+    div {
+        width: 45vw;
+        display: inline-block;
+    }
+    
+    img {
+        max-height: 30vh;
+    }
+}
+
+/* =========================================================
+   THAY ĐỔI 3: TRUY VẤN MÀN HÌNH LỚN (Kích hoạt ở 998px)
+   Yêu cầu: 3 div ngang (30vw)
+   ========================================================= */
+@media (min-width: 998px) {
+    div {
+        width: 30vw;
+    }
+}
